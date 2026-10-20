@@ -99,6 +99,7 @@ CWE-Bench-Java,case-097,hapifhir__org.hl7.fhir.core_CVE-2023-28465_5.6.105,CVE-2
 CWE-Bench-Java,case-098,asf__karaf_CVE-2022-22932_4.3.5,CVE-2022-22932,apache/karaf,hit,miss
 CWE-Bench-Java,case-099,keycloak__keycloak_CVE-2022-3782_20.0.1,CVE-2022-3782,keycloak/keycloak,miss,miss
 CWE-Bench-Java,case-100,apache__incubator-dubbo_CVE-2021-30181_2.6.8,CVE-2021-30181,apache/dubbo,miss,miss
+CWE-Bench-Java,case-101,aws__aws-sdk-java_CVE-2022-31159_1.12.260,CVE-2022-31159,aws/aws-sdk-java,hit,miss
 CWE-Bench-Java,case-102,asf__cxf_CVE-2016-6812_3.0.11,CVE-2016-6812,apache/cxf,miss,miss
 CWE-Bench-Java,case-103,keycloak__keycloak_CVE-2022-1274_20.0.4,CVE-2022-1274,keycloak/keycloak,miss,miss
 CWE-Bench-Java,case-104,keycloak__keycloak_CVE-2022-4137_20.0.4,CVE-2022-4137,keycloak/keycloak,miss,hit
@@ -180,6 +181,7 @@ CWE-Bench-Java,case-180,templating-engine-plugin__CVE-2025-31722_2.5.3,CVE-2025-
 CWE-Bench-Java,case-181,jenkins__CVE-2025-31721_prototype-1.7,CVE-2025-31721,jenkinsci/jenkins,miss,miss
 CWE-Bench-Java,case-182,jenkins__CVE-2025-31720_prototype-1.7,CVE-2025-31720,jenkinsci/jenkins,miss,miss
 CWE-Bench-Java,case-183,simple-queue-plugin__CVE-2025-31723_simple-queue-1.4.6,CVE-2025-31723,jenkinsci/simple-queue-plugin,miss,hit
+CWE-Bench-Java,case-184,camel__CVE-2025-30177_camel-4.10.2,CVE-2025-30177,apache/camel,miss,miss
 CWE-Bench-Java,case-185,activemq-artemis__CVE-2025-27427_2.39.0,CVE-2025-27427,apache/activemq-artemis,miss,hit
 CWE-Bench-Java,case-186,netty-incubator-codec-quic__CVE-2025-29908_netty-incubator-codec-parent-quic-0.0.70.Final,CVE-2025-29908,netty/netty-incubator-codec-quic,miss,miss
 CWE-Bench-Java,case-187,kylin__CVE-2025-30067_kylin-5.0.1,CVE-2025-30067,apache/kylin,miss,hit

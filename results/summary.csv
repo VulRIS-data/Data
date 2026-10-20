@@ -2,4 +2,4 @@ dataset,evaluated,codeql_hit,codeql_rate,vulris_llm_hit,vulris_llm_rate,addition
 Vul4J,79,11,13.92,29,36.71,18,22.78,4,7,25,43
 VJBench,42,4,9.52,20,47.62,16,38.10,3,1,17,21
 Vul4J+,140,17,12.14,59,42.14,42,30.00,9,8,50,73
-CWE-Bench-Java,210,40,19.05,91,43.33,51,24.29,24,16,67,103
+CWE-Bench-Java,212,41,19.34,91,42.92,50,23.58,24,17,67,104
