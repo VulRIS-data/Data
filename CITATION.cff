@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use these VulRIS evaluation artifacts, please cite the paper and this data release."
+title: "VulRIS: Vul4J+ B0/P1 evaluation artifacts"
+type: dataset
+authors:
+  - family-names: Kang
+    given-names: DaeHyun
+version: 1.0.0
+date-released: 2026-11-10
+repository-code: "https://github.com/VulRIS-data/Data"
+url: "https://github.com/VulRIS-data/Data/releases/tag/vul4jplus-paper-evidence-20261110"

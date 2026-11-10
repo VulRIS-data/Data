@@ -1,13 +1,35 @@
-# Flash Max Top1 results
+# VulRIS paper data
 
-| Dataset | Cases | CodeQL | B0 | P1 | P1−B0 (cases; pp) |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| VJBench | 42 | 4 (9.52%) | 16 (38.10%) | 16 (38.10%) | +0; +0.00 pp |
-| Vul4J+ | 140 | 17 (12.14%) | 39 (27.86%) | 46 (32.86%) | +7; +5.00 pp |
-| CWE-Bench-Java | 213 | 41 (19.25%) | 52 (24.41%) | 51 (23.94%) | -1; -0.47 pp |
+This repository contains the final evidence used by the VulRIS paper. The
+evaluation uses one fixed 140-case Vul4J+ cohort under a source-only baseline
+(B0) and a VulRIS-assisted condition (P1).
 
-All paired LLM submissions use Flash Max (`deepseek-flash`, reasoning effort `max`) and permit at most one candidate. B0 reads prepared source; P1 also queries read-only VulRIS relations. The metric is reference-cause and affected-path matching. CodeQL is the recorded baseline; exact source-version parity with every corrected LLM input has not been established.
+## Final results
 
-Legacy Vul4J multi-candidate responses and their derived comparisons have been removed from the current tree. The separate Vul4J P1 Top1 experiment (79 completed reviews, October 9–10) remains preserved. It has no matching Top1 B0 in the recorded experiment and is not substituted with old multi-candidate B0 results.
+| Method/model | B0 | P1 | P1−B0 |
+| --- | ---: | ---: | ---: |
+| DeepSeek 4.1 Flash (Max) | 39/140 (27.86%) | 48/140 (34.29%) | +9 (+6.43 pp) |
+| Gemini 3.8 Flash (High) | 52/140 (37.14%) | 49/140 (35.00%) | -3 (-2.14 pp) |
+| GPT-6 Luna (High) | 15/140 (10.71%) | 18/140 (12.86%) | +3 (+2.14 pp) |
+| GPT-6 Luna (Max) | 20/140 (14.29%) | 23/140 (16.43%) | +3 (+2.14 pp) |
 
-The paired snapshot contains 395 cases and 790 selected LLM reports.
+The CodeQL CLI 2.23.2 baseline reports 19/140 (13.57%). GPT-5.6 Luna is
+excluded from the final paper and comparative experiment.
+
+## Contents
+
+- [`results/vul4jplus-final-20261110`](results/vul4jplus-final-20261110/):
+  1,260 case-level binary decisions, machine-readable paper tables, data
+  dictionary, provenance hashes, and the raw-ledger manifest.
+- [Raw experiment ledgers and criteria artifacts](https://github.com/VulRIS-data/Data/releases/tag/vul4jplus-paper-evidence-20261110):
+  13 SQLite ledgers and four mapping/criteria artifacts distributed as one
+  GitHub Release asset.
+- [`DATA_SOURCES.md`](DATA_SOURCES.md): benchmark source and redistribution
+  scope.
+- [`LICENSES.md`](LICENSES.md): licensing boundaries for original metadata and
+  third-party benchmark material.
+
+The old VJBench, CWE-Bench-Java, and superseded Vul4J+ aggregate files were
+removed from the final branch because they are not used by the final
+Vul4J+-only manuscript. The pre-cleanup state remains recoverable at tag
+`archive-pre-final-vul4jplus-cleanup-20261110`.
